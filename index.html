@@ -99,81 +99,80 @@
 
     <main>
         <div class="grid">
-            <!-- Left Column: Portfolio & Experience -->
-            <h2>Education & Experience</h2>
-                <h3>The Chinese University of Hong Kong</h3>
-                <p><strong>Bachelor of Statistics, Minor in Risk Management</strong> (Expected 2027)</p>
+            <!-- Left Column: Portfolio & Experience wrapped cleanly together -->
+            <div class="main-content">
                 
-                <h3>Asian Quant Academy</h3>
-                <p><strong>AQA Quant Training Program</strong> (2026 Summer Cohort)</p>
+                <section>
+                    <h2>Education & Experience</h2>
+                    <h3>The Chinese University of Hong Kong</h3>
+                    <p><strong>Bachelor of Statistics, Minor in Risk Management</strong> (Expected 2027)</p>
+                    
+                    <h3>Asian Quant Academy</h3>
+                    <p><strong>AQA Quant Training Program</strong> (2026 Summer Cohort)</p>
 
-                <h3>Personal Investing & Market Analysis</h3>
-                <ul>
-                    <li>Conduct independent fundamental analysis of equities (balance sheets, income statements, cash flows).</li>
-                    <li>Invest in commodities and the US stock market.</li>
-                </ul>
-            </section>
-
-        
-            <section>
-                <h2>Quantitative Portfolio</h2>
-                
-                <div class="project-card">
-                    <h3>Hang Seng Index Return Distribution Analysis</h3>
-                    <p><span class="tag">Python</span><span class="tag">Yahoo Finance API</span><span class="tag">Statistical Modeling</span></p>
+                    <h3>Personal Investing & Market Analysis</h3>
                     <ul>
-                        <li>Collected and analyzed HSI price data (2021-2024).</li>
-                        <li>Computed daily log returns and estimated statistical properties (mean, volatility, skewness, kurtosis).</li>
-                        <li>Performed normality testing using Shapiro-Wilk and Jarque-Bera tests.</li>
-                        <li>Visualized return behavior using histograms, Q-Q plots, and box plots to identify fat tails.</li>
+                        <li>Conduct independent fundamental analysis of equities (balance sheets, income statements, cash flows).</li>
+                        <li>Invest in commodities and the US stock market.</li>
                     </ul>
-                </div>
+                </section>
+            
+                <section>
+                    <h2>Quantitative Portfolio</h2>
+                    
+                    <div class="project-card">
+                        <h3>Hang Seng Index Return Distribution Analysis</h3>
+                        <p><span class="tag">Python</span><span class="tag">Yahoo Finance API</span><span class="tag">Statistical Modeling</span></p>
+                        <ul>
+                            <li>Collected and analyzed HSI price data (2021-2024).</li>
+                            <li>Computed daily log returns and estimated statistical properties (mean, volatility, skewness, kurtosis).</li>
+                            <li>Performed normality testing using Shapiro-Wilk and Jarque-Bera tests.</li>
+                            <li>Visualized return behavior using histograms, Q-Q plots, and box plots to identify fat tails.</li>
+                        </ul>
+                    </div>
 
-                <div class="project-card">
-                    <h3>Brent vs WTI Crude Oil Spread Analysis</h3>
-                    <p><span class="tag">Python</span><span class="tag">Time Series</span><span class="tag">Volatility Clustering</span></p>
-                    <ul>
-                        <li>Analyzed 30 years of Brent and WTI crude oil price data (1995-2024) to study market dynamics.</li>
-                        <li>Performed rolling correlation and volatility analysis to detect co-movement patterns.</li>
-                        <li>Evaluated distributional characteristics of log returns, identifying skewness and fat tails.</li>
-                    </ul>
-                </div>
+                    <div class="project-card">
+                        <h3>Brent vs WTI Crude Oil Spread Analysis</h3>
+                        <p><span class="tag">Python</span><span class="tag">Time Series</span><span class="tag">Volatility Clustering</span></p>
+                        <ul>
+                            <li>Analyzed 30 years of Brent and WTI crude oil price data (1995-2024) to study market dynamics.</li>
+                            <li>Performed rolling correlation and volatility analysis to detect co-movement patterns.</li>
+                            <li>Evaluated distributional characteristics of log returns, identifying skewness and fat tails.</li>
+                        </ul>
+                    </div>
 
-                <div class="project-card">
-                    <h3>Global Movie Box Office Data Analysis</h3>
-                    <p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">EDA</span></p>
-                    <ul>
-                        <li>Compared revenue performance between Disney (BV) and Warner Bros (WB) productions using EDA.</li>
-                        <li>Applied filtering, grouping, and computed summary statistics to evaluate distributions.</li>
-                    </ul>
-                </div>
+                    <div class="project-card">
+                        <h3>Global Movie Box Office Data Analysis</h3>
+                        <p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">EDA</span></p>
+                        <ul>
+                            <li>Compared revenue performance between Disney (BV) and Warner Bros (WB) productions using EDA.</li>
+                            <li>Applied filtering, grouping, and computed summary statistics to evaluate distributions.</li>
+                        </ul>
+                    </div>
 
-                 <div class="project-card">
-                    <h3>Quantitative Trading Strategy & Backtesting Platform </h3>
-                    <p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Backtesting.py</span></p>
-                    <ul>
-                        <li>Engineered and backtested an algorithmic trend-following strategy (Adaptive ATR Smart Money) using historic market data integrated via the Yahoo Finance API.</li>
-                        <li>Implemented a volume-confirmed breakout mechanism filtering high-probability entry signals based on 20-day price highs and volume expansion thresholds ($>1.1\times$ moving average).</li>
-                        <li>Designed a dynamic risk management framework utilizing Average True Range (ATR) to replace rigid percentage-based stops with volatility-adjusted initial and trailing stop-losses.</li>
-                        <li>Optimized capital preservation by programming an automated trailing stop-loss architecture that locks in profits based on peak holding-period prices while filtering out false-breakout market noise.</li>
-                    </ul>
-                </div>
+                    <div class="project-card">
+                        <h3>Quantitative Trading Strategy & Backtesting Platform</h3>
+                        <p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Backtesting.py</span></p>
+                        <ul>
+                            <li>Engineered and backtested an algorithmic trend-following strategy (Adaptive ATR Smart Money) using historic market data integrated via the Yahoo Finance API.</li>
+                            <li>Implemented a volume-confirmed breakout mechanism filtering high-probability entry signals based on 20-day price highs and volume expansion thresholds ($>1.1\times$ moving average).</li>
+                            <li>Designed a dynamic risk management framework utilizing Average True Range (ATR) to replace rigid percentage-based stops with volatility-adjusted initial and trailing stop-losses.</li>
+                            <li>Optimized capital preservation by programming an automated trailing stop-loss architecture that locks in profits based on peak holding-period prices while filtering out false-breakout market noise.</li>
+                        </ul>
+                    </div>
 
-                <div class="project-card">
-                    <h3>Multi-Timeframe Market Analytics & Volume Tracker</h3>
-                    <p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Yahoo Finance API</span></p>
-                    <ul>
-                        <li>Architected a dual-interval analysis engine that programmatically fetches, flattens, and cleans multi-index historical market data via the Yahoo Finance API across Daily (2-year) and Weekly (5-year) horizons.</li>
-                        <li>Integrated algorithmic technical indicators using the ta library to dynamically monitor and output Moving Average alignments (20/50/200 MA), crossover tracking (Golden/Death Crosses), and RSI momentum thresholds.</li>
-                        <li>Developed a 'Volume Tracker' intelligence module utilizing On-Balance Volume (OBV) and volume moving averages to decipher institutional accumulation patterns, separating healthy price consolidation from distribution risk.</li>
-                        <li>Engineered robust edge-case handling for structural data alignment, data-type safety (float64 strict mapping), and missing timeframe buffers to ensure zero-runtime exceptions during fast market scans.</li>
-                    </ul>
-                </div>
-
-
-                
-
-    
+                    <div class="project-card">
+                        <h3>Multi-Timeframe Market Analytics & Volume Tracker</h3>
+                        <p><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Yahoo Finance API</span></p>
+                        <ul>
+                            <li>Architected a dual-interval analysis engine that programmatically fetches, flattens, and cleans multi-index historical market data via the Yahoo Finance API across Daily (2-year) and Weekly (5-year) horizons.</li>
+                            <li>Integrated algorithmic technical indicators using the ta library to dynamically monitor and output Moving Average alignments (20/50/200 MA), crossover tracking (Golden/Death Crosses), and RSI momentum thresholds.</li>
+                            <li>Developed a 'Volume Tracker' intelligence module utilizing On-Balance Volume (OBV) and volume moving averages to decipher institutional accumulation patterns, separating healthy price consolidation from distribution risk.</li>
+                            <li>Engineered robust edge-case handling for structural data alignment, data-type safety (float64 strict mapping), and missing timeframe buffers to ensure zero-runtime exceptions during fast market scans.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
             <!-- Right Column: Skills & Interests -->
             <aside>
